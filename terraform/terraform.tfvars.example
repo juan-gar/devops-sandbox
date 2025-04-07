@@ -1,0 +1,10 @@
+project_id            = "YOUR_GCP_PROJECT_ID"
+region                = "us-central1"
+service_name          = "python-devops-practice"
+container_image       = "docker.io/yourusername/python-devops-practice:latest"
+service_account_email = "cloudrun-sa@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+container_port        = 8080
+max_instances         = 10
+min_instances         = 0
+cpu                   = "1"
+memory                = "512Mi"
