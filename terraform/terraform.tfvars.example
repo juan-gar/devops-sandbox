@@ -1,5 +1,5 @@
 project_id = "your-gcp-project-id"
 region = "us-central1"
-container_image = "gcr.io/your-gcp-project-id/devops-app:latest"
+container_image = "us-central1-docker.pkg.dev/your-gcp-project-id/devops-app/image:latest"
 latency_threshold = 500
 notification_channels = ["projects/your-gcp-project-id/notificationChannels/12345678"]
