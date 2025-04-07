@@ -1,0 +1,11 @@
+# DevOps Team owns all files
+* @devops-team
+
+# App code owned by backend team
+/src/ @backend-team
+
+# Infrastructure code owned by infrastructure team
+/terraform/ @infrastructure-team
+
+# CI/CD pipelines owned by platform team
+/.github/workflows/ @platform-team
