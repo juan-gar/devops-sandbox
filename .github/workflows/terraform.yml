@@ -38,7 +38,7 @@ jobs:
       env:
         GOOGLE_CREDENTIALS: ${{ secrets.CLOUDRUN_SA }}
         TF_VAR_project_id: ${{ secrets.GCP_PROJECT_ID }}
-        TF_VAR_container_image: gcr.io/${{ secrets.GCP_PROJECT_ID }}/devops-app:latest
+        TF_VAR_container_image: us-central1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/devops-repo/devops-app:latest
 
     - name: Terraform Apply
       if: github.ref == 'refs/heads/main'
@@ -46,4 +46,4 @@ jobs:
       env:
         GOOGLE_CREDENTIALS: ${{ secrets.CLOUDRUN_SA }}
         TF_VAR_project_id: ${{ secrets.GCP_PROJECT_ID }}
-        TF_VAR_container_image: gcr.io/${{ secrets.GCP_PROJECT_ID }}/devops-app:latest
+        TF_VAR_container_image: us-central1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/devops-repo/devops-app:latest
